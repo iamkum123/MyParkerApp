@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#3949AB"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="#82B1FF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="261dp"
+            android:layout_marginBottom="50dp" />
+
+        <Button
+            android:id="@+id/pgsumhis"
+            android:layout_width="301dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/button_round"
+            android:text="Check Summon" />
+
+        <Button
+            android:id="@+id/pgpayhis"
+            android:layout_width="303dp"
+            android:layout_height="50dp"
+            android:background="@layout/button_round"
+            android:text="Check Payment" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="#42A5F5"
+        app:itemIconTint="@layout/bottombaritem"
+        app:itemTextColor="@layout/bottombaritem"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@layout/navigation" />
+
+
+</android.support.constraint.ConstraintLayout>

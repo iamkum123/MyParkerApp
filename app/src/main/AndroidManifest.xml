@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="info.MyParker.Apps"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   <!-- <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />-->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+
+
+    <application
+        android:name="info.MyParker.Apps.app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="info.MyParker.Apps.activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="info.MyParker.Apps.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="info.MyParker.Apps.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name="info.MyParker.Apps.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.TopupActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.PaymentActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="info.MyParker.Apps.activity.TopupSuccessActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.PaymentHistoryActivity"
+            android:label="Payment"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.ProfileActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.HistoryActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.MakePaymentActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.SummonHistoryActivity"
+            android:label="Summon"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.ChangeNameActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.ChangePasswordActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.AddVehicleActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.PaySummonActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.CheckVehicleActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.DeleteVehicleActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.QRCodeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.activity.GenerateReceiptActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.officer.ConfirmSummonActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.officer.IssueSummonActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.officer.OfficerLoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.officer.OfficerMainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.officer.ParkStatActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.officer.OfficerProfileActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="info.MyParker.Apps.officer.ScanActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon Jun 24 19:37:13 SGT 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\User\\Desktop\\MyParker\\MyParker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.path=classes.dex
+0.set=DEX
+count=1

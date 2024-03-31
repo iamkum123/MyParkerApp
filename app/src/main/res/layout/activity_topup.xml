@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btntopup2"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:background="@layout/button_normal"
+        android:gravity="center"
+        android:text="PROCEED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="290dp"
+        android:layout_height="185dp"
+
+        android:layout_marginTop="130dp"
+        android:theme="@style/MyRaidoButtonTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rm5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="RM 5"
+            android:textColor="#1B5E20"
+            android:textSize="18sp"
+            tools:text="RM 5" />
+
+        <RadioButton
+            android:id="@+id/rm10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="RM 10"
+            android:textColor="#1B5E20"
+            android:textSize="18sp"
+            tools:text="RM 10" />
+
+        <RadioButton
+            android:id="@+id/rm30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="RM 30"
+            android:textColor="#1B5E20"
+            android:textSize="18sp"
+            tools:text="RM 30" />
+
+        <RadioButton
+            android:id="@+id/rm50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="RM 50"
+            android:textColor="#1B5E20"
+            android:textSize="18sp"
+            tools:text="RM 50" />
+
+        <RadioButton
+            android:id="@+id/rm100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="RM 100"
+            android:textColor="#1B5E20"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#3949AB"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Topup"
+            android:textColor="#82B1FF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="#42A5F5"
+        app:itemIconTint="@layout/bottombaritem"
+        app:itemTextColor="@layout/bottombaritem"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@layout/navigation" />
+
+    <TextView
+        android:layout_width="224dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="61dp"
+        android:text="@string/selectamount"
+        android:textColor="@color/input_login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
